@@ -47,7 +47,16 @@ style: |
     color: #7f8c8d;
     font-size: 0.8em;
   }
+  
+  section.lead {
+    text-align: center;
+    justify-content: center;
+  }
 ---
+
+<!-- _class: lead -->
+<!-- _paginate: false -->
+<!-- _footer: "" -->
 
 # Product Documentation System
 ## Technical Overview & Best Practices
@@ -58,6 +67,9 @@ style: |
 
 ---
 
+<!-- _backgroundColor: #2c3e50 -->
+<!-- _color: white -->
+
 ![bg](https://raw.githubusercontent.com/SimiImmaculate24/product-docs/main/marp.jpeg)
 
 # Welcome to Our Documentation Platform
@@ -65,6 +77,8 @@ style: |
 A comprehensive guide to creating maintainable, version-controlled documentation
 
 ---
+
+<!-- _header: "Table of Contents" -->
 
 ## Table of Contents
 
@@ -75,6 +89,10 @@ A comprehensive guide to creating maintainable, version-controlled documentation
 5. Maintenance Guidelines
 
 ---
+
+<!-- _class: lead -->
+<!-- _backgroundColor: #3498db -->
+<!-- _color: white -->
 
 ![bg right:40%](https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800)
 
@@ -89,6 +107,9 @@ A comprehensive guide to creating maintainable, version-controlled documentation
 - **Developer Friendly** - Write like code
 
 ---
+
+<!-- _header: "Version Control" -->
+<!-- _footer: "Best Practices | 24ds2000040@ds.study.iitm.ac.in" -->
 
 ## Version Control Integration
 
@@ -112,6 +133,9 @@ git push origin docs/new-feature
 
 ---
 
+<!-- _backgroundColor: #ecf0f1 -->
+<!-- _header: "Algorithmic Complexity" -->
+
 ![bg left:30%](https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800)
 
 ## Algorithmic Complexity in Documentation Processing
@@ -133,6 +157,9 @@ T(n, m) = O(n \cdot m)
 $$
 
 ---
+
+<!-- _class: lead -->
+<!-- _paginate: false -->
 
 ## Space Complexity Considerations
 
@@ -158,12 +185,19 @@ Where:
 
 ---
 
+<!-- _backgroundColor: #34495e -->
+<!-- _color: white -->
+<!-- _header: "" -->
+
 ![bg](https://images.unsplash.com/photo-1550439062-609e1531270e?w=1200)
 ![bg](https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1200)
 
 ## Format Conversion Tools
 
 ---
+
+<!-- _header: "Export Formats" -->
+<!-- _footer: "Marp CLI Documentation | 24ds2000040@ds.study.iitm.ac.in" -->
 
 ### Supported Output Formats
 
@@ -181,6 +215,9 @@ marp slides.md --pdf --allow-local-files
 ```
 
 ---
+
+<!-- _backgroundColor: #f8f9fa -->
+<!-- _header: "Code Examples" -->
 
 ## Custom Styling Examples
 
@@ -204,6 +241,10 @@ $$
 
 ---
 
+<!-- _class: lead -->
+<!-- _backgroundColor: #e74c3c -->
+<!-- _color: white -->
+
 ![bg right](https://raw.githubusercontent.com/SimiImmaculate24/product-docs/main/marp.jpeg)
 
 ## Documentation Maintenance
@@ -215,14 +256,10 @@ $$
 - **Feature Additions:** With release
 - **API Changes:** Version-specific
 
-### Review Process
-
-1. Author creates documentation
-2. Peer Review
-3. Technical Review
-4. Approval
-
 ---
+
+<!-- _header: "Best Practices" -->
+<!-- _paginate: true -->
 
 ## Best Practices Summary
 
@@ -242,6 +279,10 @@ $$
 - Avoid long paragraphs without breaks
 
 ---
+
+<!-- _backgroundColor: #2c3e50 -->
+<!-- _color: white -->
+<!-- _header: "Mathematical Formulas" -->
 
 ## Mathematical Formula Examples
 
@@ -264,6 +305,8 @@ $$
 
 ---
 
+<!-- _class: lead -->
+
 ![bg opacity:.3](https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200)
 
 ## Performance Metrics
@@ -277,6 +320,9 @@ $$
 | Large | 8.3s | 21.2s | 29.5s |
 
 ---
+
+<!-- _header: "Tools & Resources" -->
+<!-- _backgroundColor: #ecf0f1 -->
 
 ## Tools and Resources
 
@@ -296,6 +342,10 @@ $$
 
 ---
 
+<!-- _backgroundColor: #3498db -->
+<!-- _color: white -->
+<!-- _header: "" -->
+
 ![bg left:40%](https://raw.githubusercontent.com/SimiImmaculate24/product-docs/main/marp.jpeg)
 
 ## Contact & Support
@@ -314,6 +364,10 @@ Monday - Friday: 9:00 AM - 5:00 PM IST
 
 ---
 
+<!-- _class: lead -->
+<!-- _paginate: false -->
+<!-- _footer: "" -->
+
 ![bg](https://raw.githubusercontent.com/SimiImmaculate24/product-docs/main/marp.jpeg)
 
 # Thank You!
@@ -325,6 +379,10 @@ Monday - Friday: 9:00 AM - 5:00 PM IST
 **Contact:** 24ds2000040@ds.study.iitm.ac.in
 
 ---
+
+<!-- _header: "Appendix" -->
+<!-- _paginate: true -->
+<!-- _footer: "Contact: 24ds2000040@ds.study.iitm.ac.in" -->
 
 ## Appendix: Additional Resources
 
