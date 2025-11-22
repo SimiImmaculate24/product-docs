@@ -1,22 +1,14 @@
 ---
 marp: true
-theme: custom
+theme: default
 paginate: true
-footer: '**Contact:** 24ds2000040@ds.study.iitm.ac.in'
+footer: 'Contact: 24ds2000040@ds.study.iitm.ac.in'
+backgroundImage: url('https://raw.githubusercontent.com/SimiImmaculate24/product-docs/main/marp.jpeg')
 style: |
-  @import 'default';
-  
   section {
     background-color: #f5f5f5;
     color: #333;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  section.lead {
-    background-color: #2c3e50;
-    color: white;
-    text-align: center;
-    justify-content: center;
   }
   
   h1 {
@@ -49,24 +41,11 @@ style: |
     border-left: 4px solid #3498db;
     padding-left: 20px;
     font-style: italic;
-    color: #555;
   }
   
   footer {
     color: #7f8c8d;
     font-size: 0.8em;
-  }
-  
-  .bg-overlay {
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-  }
-  
-  .bg-overlay h1,
-  .bg-overlay h2,
-  .bg-overlay p {
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
   }
 ---
 
@@ -79,14 +58,11 @@ style: |
 
 ---
 
-<!-- _backgroundImage: url('https://raw.githubusercontent.com/SimiImmaculate24/product-docs/main/marp.jpeg') -->
-<!-- _class: bg-overlay -->
+![bg](https://raw.githubusercontent.com/SimiImmaculate24/product-docs/main/marp.jpeg)
 
 # Welcome to Our Documentation Platform
 
-## A comprehensive guide to creating maintainable, version-controlled documentation
-
-### Transform your technical writing workflow
+A comprehensive guide to creating maintainable, version-controlled documentation
 
 ---
 
@@ -100,17 +76,17 @@ style: |
 
 ---
 
-<!-- _backgroundImage: url('https://raw.githubusercontent.com/SimiImmaculate24/product-docs/main/background1.jpg') -->
-<!-- _class: bg-overlay -->
+![bg right:40%](https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800)
 
-# Why Marp for Documentation?
+## Why Marp for Documentation?
 
-## Key Benefits
+**Key Benefits:**
 
-- ✅ **Version Control Friendly** - Plain Markdown files work seamlessly with Git
-- ✅ **Multiple Output Formats** - Export to PDF, HTML, PPTX
-- ✅ **Easy Collaboration** - Team members can review and suggest changes
-- ✅ **Consistent Styling** - Custom themes ensure brand consistency
+- **Version Control** - Git integration
+- **Multiple Formats** - PDF, HTML, PPTX
+- **Collaboration** - Team reviews
+- **Custom Themes** - Brand consistency
+- **Developer Friendly** - Write like code
 
 ---
 
@@ -136,19 +112,19 @@ git push origin docs/new-feature
 
 ---
 
+![bg left:30%](https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800)
+
 ## Algorithmic Complexity in Documentation Processing
 
 ### Time Complexity Analysis
 
-When processing large documentation sets, consider:
-
-**Markdown Parsing Complexity:**
+**Markdown Parsing:**
 
 $$
 T(n) = O(n)
 $$
 
-Where $n$ is the number of characters in the document.
+Where $n$ is the number of characters.
 
 **Search Index Building:**
 
@@ -156,18 +132,11 @@ $$
 T(n, m) = O(n \cdot m)
 $$
 
-Where:
-- $n$ = number of documents
-- $m$ = average document length
-
 ---
 
-<!-- _backgroundImage: url('https://raw.githubusercontent.com/SimiImmaculate24/product-docs/main/background2.jpg') -->
-<!-- _class: bg-overlay -->
+## Space Complexity Considerations
 
-# Space Complexity Considerations
-
-## Memory Usage for Document Storage
+### Memory Usage for Document Storage
 
 **Linear Space Complexity:**
 
@@ -181,11 +150,20 @@ $$
 S_{index}(n, k) = O(n \cdot k)
 $$
 
-Where $n$ = total documents, $k$ = average keywords per document
+Where:
+- $n$ = total documents
+- $k$ = average keywords per document
+
+**Optimization Goal:** Minimize $k$ while maintaining search quality
 
 ---
 
+![bg](https://images.unsplash.com/photo-1550439062-609e1531270e?w=1200)
+![bg](https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1200)
+
 ## Format Conversion Tools
+
+---
 
 ### Supported Output Formats
 
@@ -198,10 +176,7 @@ Where $n$ = total documents, $k$ = average keywords per document
 ### Installation
 
 ```bash
-# Install Marp CLI
 npm install -g @marp-team/marp-cli
-
-# Convert to PDF
 marp slides.md --pdf --allow-local-files
 ```
 
@@ -223,29 +198,29 @@ def generate_documentation(content):
 
 ### Mathematical Notation
 
-The Big O notation for our search algorithm:
-
 $$
 O(\log n) \ll O(n) \ll O(n \log n) \ll O(n^2)
 $$
 
 ---
 
-## Documentation Maintenance Guidelines
+![bg right](https://raw.githubusercontent.com/SimiImmaculate24/product-docs/main/marp.jpeg)
+
+## Documentation Maintenance
 
 ### Update Frequency
 
-- **Product Changes:** Update within 24 hours
-- **Bug Fixes:** Document immediately
-- **Feature Additions:** Concurrent with release
-- **API Changes:** Version-specific documentation
+- **Product Changes:** 24 hours
+- **Bug Fixes:** Immediate
+- **Feature Additions:** With release
+- **API Changes:** Version-specific
 
 ### Review Process
 
-1. **Author** creates documentation
-2. **Peer Review** by team member
-3. **Technical Review** by subject matter expert
-4. **Approval** by documentation lead
+1. Author creates documentation
+2. Peer Review
+3. Technical Review
+4. Approval
 
 ---
 
@@ -265,21 +240,6 @@ $$
 - Avoid overly technical jargon
 - Don't forget to update screenshots
 - Avoid long paragraphs without breaks
-
----
-
-## Version Control Workflow Diagram
-
-```mermaid
-graph LR
-    A[Write Docs] --> B[Commit to Git]
-    B --> C[Create PR]
-    C --> D[Review]
-    D --> E{Approved?}
-    E -->|Yes| F[Merge]
-    E -->|No| A
-    F --> G[Deploy]
-```
 
 ---
 
@@ -304,18 +264,17 @@ $$
 
 ---
 
+![bg opacity:.3](https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200)
+
 ## Performance Metrics
 
 ### Documentation Build Times
 
-| Document Size | Parse Time | Render Time | Total |
-|--------------|------------|-------------|-------|
-| Small (<100 slides) | 0.5s | 1.2s | 1.7s |
-| Medium (100-500) | 2.1s | 5.4s | 7.5s |
-| Large (>500) | 8.3s | 21.2s | 29.5s |
-
-**Optimization Strategy:** 
-- Use incremental builds: $O(\Delta n)$ instead of $O(n)$
+| Size | Parse | Render | Total |
+|------|-------|--------|-------|
+| Small | 0.5s | 1.2s | 1.7s |
+| Medium | 2.1s | 5.4s | 7.5s |
+| Large | 8.3s | 21.2s | 29.5s |
 
 ---
 
@@ -331,11 +290,13 @@ $$
 
 ### Documentation
 
-- Official Marp Documentation: https://marpit.marp.app/
+- Official Marp: https://marpit.marp.app/
 - Markdown Guide: https://www.markdownguide.org/
-- Git Documentation: https://git-scm.com/doc
+- Git Docs: https://git-scm.com/doc
 
 ---
+
+![bg left:40%](https://raw.githubusercontent.com/SimiImmaculate24/product-docs/main/marp.jpeg)
 
 ## Contact & Support
 
@@ -345,24 +306,21 @@ $$
 
 💬 **Support Channels:**
 - Internal Slack: #documentation
-- GitHub Issues: Report bugs and suggestions
-- Wiki: Knowledge base and tutorials
+- GitHub Issues
+- Wiki: Knowledge base
 
 ### Office Hours
-- Monday - Friday: 9:00 AM - 5:00 PM IST
-- Response Time: Within 24 hours
+Monday - Friday: 9:00 AM - 5:00 PM IST
 
 ---
 
-<!-- _class: lead -->
-<!-- _paginate: false -->
-<!-- _backgroundImage: url('https://raw.githubusercontent.com/SimiImmaculate24/product-docs/main/marp.jpeg') -->
+![bg](https://raw.githubusercontent.com/SimiImmaculate24/product-docs/main/marp.jpeg)
 
 # Thank You!
 
 ## Questions?
 
-**Remember:** Great documentation is maintainable documentation
+**Great documentation is maintainable documentation**
 
 **Contact:** 24ds2000040@ds.study.iitm.ac.in
 
@@ -384,7 +342,4 @@ marp -w slides.md
 
 # Custom theme
 marp --theme custom-theme.css slides.md
-
-# With templates
-marp --template template.html slides.md
 ```
