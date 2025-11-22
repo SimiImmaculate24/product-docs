@@ -12,6 +12,13 @@ style: |
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
+  section.lead {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    justify-content: center;
+  }
+  
   h1 {
     color: #2c3e50;
     border-bottom: 4px solid #3498db;
@@ -49,6 +56,18 @@ style: |
     color: #7f8c8d;
     font-size: 0.8em;
   }
+  
+  .bg-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+  }
+  
+  .bg-overlay h1,
+  .bg-overlay h2,
+  .bg-overlay p {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
 ---
 
 # Product Documentation System
@@ -60,12 +79,14 @@ style: |
 
 ---
 
-<!-- _backgroundImage: url('marp.jpeg') -->
-<!-- _color: white -->
+<!-- _backgroundImage: url('https://raw.githubusercontent.com/SimiImmaculate24/product-docs/main/marp.jpeg') -->
+<!-- _class: bg-overlay -->
 
 # Welcome to Our Documentation Platform
 
-A comprehensive guide to creating maintainable, version-controlled documentation
+## A comprehensive guide to creating maintainable, version-controlled documentation
+
+### Transform your technical writing workflow
 
 ---
 
@@ -79,15 +100,17 @@ A comprehensive guide to creating maintainable, version-controlled documentation
 
 ---
 
-## Why Marp for Documentation?
+<!-- _backgroundImage: url('https://raw.githubusercontent.com/SimiImmaculate24/product-docs/main/background1.jpg') -->
+<!-- _class: bg-overlay -->
 
-**Key Benefits:**
+# Why Marp for Documentation?
+
+## Key Benefits
 
 - ✅ **Version Control Friendly** - Plain Markdown files work seamlessly with Git
 - ✅ **Multiple Output Formats** - Export to PDF, HTML, PPTX
 - ✅ **Easy Collaboration** - Team members can review and suggest changes
 - ✅ **Consistent Styling** - Custom themes ensure brand consistency
-- ✅ **Developer Friendly** - Write documentation like code
 
 ---
 
@@ -139,9 +162,12 @@ Where:
 
 ---
 
-## Space Complexity Considerations
+<!-- _backgroundImage: url('https://raw.githubusercontent.com/SimiImmaculate24/product-docs/main/background2.jpg') -->
+<!-- _class: bg-overlay -->
 
-### Memory Usage for Document Storage
+# Space Complexity Considerations
+
+## Memory Usage for Document Storage
 
 **Linear Space Complexity:**
 
@@ -155,11 +181,7 @@ $$
 S_{index}(n, k) = O(n \cdot k)
 $$
 
-Where:
-- $n$ = total documents
-- $k$ = average keywords per document
-
-**Optimization Goal:** Minimize $k$ while maintaining search quality
+Where $n$ = total documents, $k$ = average keywords per document
 
 ---
 
@@ -334,6 +356,7 @@ $$
 
 <!-- _class: lead -->
 <!-- _paginate: false -->
+<!-- _backgroundImage: url('https://raw.githubusercontent.com/SimiImmaculate24/product-docs/main/marp.jpeg') -->
 
 # Thank You!
 
